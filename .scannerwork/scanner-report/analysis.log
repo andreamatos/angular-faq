@@ -1,0 +1,58 @@
+SonarQube plugins:
+  - Cobertura 2.0 (cobertura)
+  - SonarCSS 1.2.0.1325 (cssfamily)
+  - Bitbucket Authentication for SonarQube 1.1.0.381 (authbitbucket)
+  - Svn 1.10.0.1917 (scmsvn)
+  - SonarScala 1.5.0.315 (sonarscala)
+  - C# Code Quality and Security 8.9.0.19135 (csharp)
+  - Java Code Quality and Security 6.5.1.22586 (java)
+  - Sonargraph Integration 5.1 (sonargraphintegration)
+  - SonarHTML 3.2.0.2082 (web)
+  - SonarFlex 2.5.1.1831 (flex)
+  - SonarXML 2.0.1.2020 (xml)
+  - SonarTS 2.1.0.4359 (typescript)
+  - VB.NET Code Quality and Security 8.9.0.19135 (vbnet)
+  - YAML Analyzer 1.5.1 (yaml)
+  - Python Code Quality and Security 2.13.0.7236 (python)
+  - Code Smells 4.0.0 (smells)
+  - JaCoCo 1.1.0.898 (jacoco)
+  - SonarGo 1.6.0.719 (go)
+  - SonarKotlin 1.5.0.315 (kotlin)
+  - SonarJS 6.2.1.12157 (javascript)
+  - SonarRuby 1.5.0.315 (ruby)
+  - Codehawk Java 1.3 (codehawk)
+  - Git 1.12.0.2034 (scmgit)
+  - PHP Code Quality and Security 3.5.0.5655 (php)
+  - SoftVis3D Sonar plugin 1.1.0 (softvis3d)
+Global server settings:
+  - sonar.cobertura.reportPath=target/cobertura/coverage.xml
+  - sonar.core.id=FD2E0B99-AXOdUAhRx99zlomqO2nI
+  - sonar.core.startTime=2020-09-01T19:19:37+0000
+  - sonar.coverage.exclusions=src/main/java/br/edu/cruzeirodosul/config/**/*,src/main/java/br/edu/cruzeirodosul/domain/**/*,*/dto/**/*,*/pom.xml,*/entities/**,src/main/java/br/edu/cruzeirodosul/exception/**,*/*Handler.java,src/app/app.component*,src/app/shared/test/mock/**/*,src/main/java/br/edu/cruzeirodosul/model/entities/**/*,src/main*,src/environments/**/*,src/app/app-routing.module.ts,**routing.module.ts,**auth-interceptor.service.ts,src/app/shared/model/**/*,src/main/java/br/edu/cruzeirodosul/model/enums/**/*,src/main/java/br/edu/cruzeirodosul/model*/**/*
+  - sonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
+  - sonar.cpd.exclusions=src/main/java/br/edu/cruzeirodosul/config/**/*,*/pom.xml,*/entities/**,src/main/java/br/edu/cruzeirodosul/exception/**,src/app/app.component*,src/main/java/br/edu/cruzeirodosul/model/entities/**/*,src/main/java/br/edu/cruzeirodosul/model/enums/**/*,src/main/java/br/edu/cruzeirodosul/domain/**/*
+  - sonar.exclusions=*/pom.xml,src/app/app.component*,src/app/shared/test/mock/**/*,src/test/**,src/main/java/br/edu/cruzeirodosul/model/enums/**/*
+  - sonar.forceAuthentication=true
+  - sonar.global.exclusions=src/main/java/br/edu/cruzeirodosul/config/**/*,*/pom.xml,src/main/java/br/edu/cruzeirodosul/exception/**,src/app/app.component*,src/app/shared/test/mock/**/*,src/main/java/br/edu/cruzeirodosul/model/entities/**/*,src/test/**,src/main/java/br/edu/cruzeirodosul/model/enums/**/*
+  - sonar.global.test.exclusions=src/main/java/br/edu/cruzeirodosul/config/**/*,src/test/**,src/main/java/br/edu/cruzeirodosul/model/enums/**/*
+  - sonar.yaml.filter.utf8_lb=true
+Project server settings:
+Project scanner properties:
+  - sonar.exclusions=**/node_modules/**
+  - sonar.host.url=http://10.10.1.44:9001
+  - sonar.login=******
+  - sonar.password=******
+  - sonar.projectBaseDir=C:\projetos-faq\front\faq-parametrizacao
+  - sonar.projectKey=faq-parametrizacao
+  - sonar.projectName=faq-parametrizacao
+  - sonar.projectVersion=1.0.0
+  - sonar.scanner.app=ScannerCli
+  - sonar.scanner.appVersion=3.1.0.1141
+  - sonar.sourceEncoding=UTF-8
+  - sonar.sources=src
+  - sonar.test.inclusions=**/*.spec.ts
+  - sonar.tests=src
+  - sonar.typescript.lcov.reportPaths=coverage/lcov.info
+  - sonar.typescript.tsconfigPath=tsconfig.app.json
+  - sonar.verbose=true
+  - sonar.working.directory=C:\projetos-faq\front\faq-parametrizacao\.scannerwork

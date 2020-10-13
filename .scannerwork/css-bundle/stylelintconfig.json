@@ -1,0 +1,1 @@
+{"rules":{"comment-no-empty":true,"string-no-newline":true,"block-no-empty":true,"no-duplicate-selectors":true,"no-extra-semicolons":true,"no-descending-specificity":true,"font-family-no-duplicate-names":true,"no-duplicate-at-import-rules":true,"no-empty-source":true}}

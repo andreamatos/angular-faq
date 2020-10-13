@@ -1,0 +1,76 @@
+<div class="panel panel-default">
+    <div class="panel-body title">
+        <h3>Cadastro FAQ</h3>
+    </div>
+</div>
+
+<form [formGroup]="formulario">
+    <div class="container">
+        <div class="form-row">
+            <div class="col-6 div-edit">
+                <span>Setor</span>
+                <select class="form-control" formControlName="setor" (change)="onChangeSetor()" required>
+                    <option [value]=''></option>
+                    <option *ngFor="let item of comboSetor" [value]="item.idSetor">{{ item.idSetor }}
+                        - {{ item.descSetor }}</option>
+                </select>
+            </div>
+            
+            <div class="col-6 div-edit">
+                <span>Empresa</span>
+                <select class="form-control" formControlName="empresa" (change)="onChangeEmpresa()" required>
+                    <option [value]=''></option>
+                    <option *ngFor="let item of comboEmpresa" [value]="item.codEmpr">{{ item.codEmpr }}
+                        - {{ item.descEmpr }}</option>
+                </select>
+            </div>
+
+            <div class="col-6 div-edit">
+                <span>Instituição</span>
+                <select class="form-control" formControlName="instituicao" required>
+                    <option [value]=''></option>
+                    <option *ngFor="let item of comboInstituicao" [value]="item.codInst">{{ item.codInst }}
+                        - {{ item.descInst }}</option>
+                </select>
+            </div>
+
+            <div class="col-6 div-edit">
+                <span>Frequência</span>
+                <select class="form-control" formControlName="frequencia" required>
+                    <option [value]='0'></option>
+                    <option *ngFor="let item of frequencia" [value]="item.idFrequencia">{{ item.idFrequencia }}</option>
+                </select>
+            </div>
+
+            <div class="col-6 div-edit">
+                <span>Status</span>
+                <select class="form-control" formControlName="status" required>
+                    <option [value]=null></option>
+                    <option *ngFor="let item of status" [value]="item.idStatus">{{ item.idStatus }}
+                        - {{item.descStatus }}</option>
+                </select>
+            </div>
+
+            <div class="col-6 div-edit">
+                <span>Palavra Chave</span>
+                <input type="text" maxlength="50" class="form-control" formControlName="resumo" required>
+            </div>
+            <div class="col-12 div-edit">
+                <span>Pergunta</span>
+                <input type="text" maxlength="100" class="form-control" formControlName="pergunta" required>
+            </div>
+            
+            <div class="col-12 div-edit">
+                <span>Resposta</span>
+                <textarea rows="10" cols="127" maxlength="2000" class="form-control" formControlName="resposta"required></textarea>
+            </div>
+
+        </div>
+
+        <div class="alinhar-col">
+            <button type="button" class="btn btn-primary btn-edit" [disabled]="habilitaBotao()" 
+                [disabled]="!formulario.valid" (click)="salvaCadastro()" value="Cadastrar">Cadastrar</button>
+        </div>
+
+    </div>
+</form>

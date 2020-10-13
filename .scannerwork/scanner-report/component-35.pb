@@ -1,0 +1,2 @@
+# 2tsX
+hr*src/app/shared/provider/model/paginacao.ts

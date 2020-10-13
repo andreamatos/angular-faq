@@ -1,0 +1,1 @@
+W 2xmlXhr"src/assets/icons/browserconfig.xml

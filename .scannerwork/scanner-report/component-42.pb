@@ -1,0 +1,1 @@
+* 2tsXGhr<src/app/shared/provider/services/consulta-filtros.service.ts

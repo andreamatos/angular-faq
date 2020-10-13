@@ -1,0 +1,1 @@
+ 2cssX>hr:src/app/modules/atualizar-faq/atualizar-faq.component.scss

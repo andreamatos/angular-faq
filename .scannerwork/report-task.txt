@@ -1,0 +1,6 @@
+projectKey=faq-parametrizacao
+serverUrl=http://10.10.1.44:9001
+serverVersion=8.4.1.35646
+dashboardUrl=http://10.10.1.44:9001/dashboard?id=faq-parametrizacao
+ceTaskId=AXUNuvdm8bLu6RS_K9lc
+ceTaskUrl=http://10.10.1.44:9001/api/ce/task?id=AXUNuvdm8bLu6RS_K9lc

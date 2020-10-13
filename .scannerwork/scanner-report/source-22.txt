@@ -1,0 +1,5 @@
+<div class="panel-body alert alert-success" role="alert">
+    <h4 class="alert-heading">FAQ</h4>
+    <hr>
+    <p>Parametrização de Setor e Usuário para utilização do sistema FAQ</p>
+</div>

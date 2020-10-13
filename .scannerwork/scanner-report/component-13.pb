@@ -1,0 +1,1 @@
+ 2cssX*hr:src/app/modules/consultar-faq/consultar-faq.component.scss
