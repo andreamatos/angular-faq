@@ -1,0 +1,57 @@
+<div class="panel panel-default">
+  <div class="panel-body title">
+      <h3>Consulta FAQ</h3>
+  </div>
+</div>
+
+<table class="table  container">
+  <caption>Resultados encontrados para consulta de FAQ's</caption>
+  <thead>
+      <tr class="form-control-table">
+          <th scope="col">Id</th>
+          <th scope="col">Setor</th>
+          <th scope="col">Empresa</th>
+          <th scope="col">Instituicao</th>
+          <th scope="col">Palavra Chave</th>
+          <th scope="col" class="acao">Ação</th>
+      </tr>
+  </thead>
+
+  <tbody >
+      <tr *ngFor="let item of listafaqDuvidas">
+          <td>{{ item.idFaqDuvidas }}</td>
+          <td>{{ item.idSetor }}</td>
+          <td>{{ item.codEmpr }}</td>
+          <td>{{ item.codInst }}</td>
+          <td>{{ item.resumo }}</td>
+          <td class="alinhar-botoes">
+            <button class="btn fa fa-pencil-square-o"style="font-size:24px" title="Atualizar"
+                routerLink="/atualizar-faq/{{item.idFaqDuvidas}}"></button>
+          </td>
+      </tr>
+  </tbody>
+</table>
+
+<div class="d-flex justify-content-between alinhamento-padding" *ngIf="listafaqDuvidas !== undefined">
+  <p class="alinhamento-padding">
+  </p>
+  <nav>
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link edit" [routerLink]="['../1']">Primeira</a>
+      </li>
+      <li *ngIf="!dadosPaginacao.first" class="page-item">
+        <a class="page-link edit-dois" [routerLink]="['../', dadosPaginacao.number]">{{ dadosPaginacao.number }}</a>
+      </li>
+      <li class="page-item ">
+        <a class="page-link edit-dois active-edit" [routerLink]="['../', dadosPaginacao.number + 1]">{{  dadosPaginacao.number + 1 }}</a>
+      </li>
+      <li *ngIf="!dadosPaginacao.last" class="page-item">
+        <a class="page-link edit-dois" [routerLink]="['../', dadosPaginacao.number + 2]">{{ dadosPaginacao.number + 2 }}</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link edit" [routerLink]="['../', dadosPaginacao.totalPages]">Última</a>
+      </li>
+    </ul>
+  </nav>
+</div>

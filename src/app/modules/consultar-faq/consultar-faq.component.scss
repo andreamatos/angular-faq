@@ -1,0 +1,42 @@
+.panel-body {
+    padding: 5px !important
+}
+
+span{
+    font-weight: 700;
+}
+
+.form-row {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    margin-bottom: 10px;
+}
+
+.alinhar-botoes{
+    text-align: center;
+}
+
+.acao{
+    text-align: center;
+}
+
+.btn-edit{
+    margin-top: 30px;
+}
+
+.btn{
+    padding:0px;
+    margin: 0px;
+    border:0px;
+}
+
+.title{ 
+    text-align: center;
+}
+
+.form-edit{
+    padding: 15px;
+}
